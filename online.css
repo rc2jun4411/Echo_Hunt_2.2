@@ -1,0 +1,179 @@
+/* start Echo_Hunt_2.0 */
+/* add, very bottom of the file and add these new styles: */
+/* mod 3rd, add, very bottom of the file and add these new styles, canvas: */
+
+body {
+    background-color: #1a1a1d; /* Dark grey background */
+    color: #c5c6c7;            /* Light grey text */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #66fcf1; /* A nice cyan color for titles */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Layout --- */
+.game-area {
+    display: flex; /* This puts our boards side-by-side */
+    justify-content: center;
+    gap: 50px; /* This creates space between the boards */
+    margin-top: 30px;
+}
+
+.grid-container {
+    background-color: #2c2f33;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* --- The Game Board --- */
+.board {
+    display: grid;
+    /* This is the magic: creates a 5-column grid */
+    grid-template-columns: repeat(5, 60px);
+    /* This creates 5 rows of the same height */
+    grid-template-rows: repeat(5, 60px);
+    border: 2px solid #66fcf1;
+    gap: 2px; /* The small lines between cells */
+    background-color: #4b5258;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #3b3e42;
+    border: 1px solid #2c2f33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer; /* Changes the mouse to a hand when hovering */
+    transition: background-color 0.2s; /* Smooth color change effect */
+}
+
+/* --- Interactivity Style --- */
+.cell:hover {
+    background-color: #4f5357;
+    border: 1px solid #66fcf1;
+}
+
+/* mod 8th step 1, changed lines below */
+/* --- Cell Content Styling (More Specific) --- */
+#primary-board .cell.ship-1 {
+    background-color: #66fcf1 !important; /* Cyan for Player 1 */
+}
+
+#primary-board .cell.ship-2 {
+    background-color: #ff4d4d !important; /* Red for Player 2 */
+}
+
+/* mod 9th part 2 step 2, added lines below */
+/* Hit, Miss, Echo markers */
+.cell.miss {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.cell.echo {
+    background-color: rgba(255, 223, 0, 0.6); /* Gold */
+}
+.cell.hit {
+    background-color: rgba(255, 0, 0, 0.8); /* Bright Red */
+}
+
+/* --- Action Controls Styling --- */
+#action-controls {
+    margin: 20px 0;
+}
+
+#action-controls button {
+    background-color: #66fcf1;
+    color: #1a1a1d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+#action-controls button:hover {
+    transform: scale(1.05);
+}
+
+#action-controls button.selected {
+    background-color: #c5c6c7;
+    box-shadow: 0 0 10px #c5c6c7;
+}
+
+/* A simple class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* added 29th mod. new button to game again */
+#btn-play-again {
+    background-color: #f7b500; /* A nice gold color */
+}
+
+
+/* add, very bottom of the file and add these new styles: */
+/* --- Styles for Echo Hunt v2.0 --- */
+
+.board-title {
+    position: relative; /* This is needed to position the ERASE button correctly */
+    padding-bottom: 10px;
+}
+
+.subtitle {
+    display: block; /* Makes the subtitle appear on its own line */
+    font-size: 14px;
+    color: #f7b500; /* Gold color for subtitles */
+    margin-bottom: 5px;
+}
+
+.red-text {
+    color: #ff4d4d; /* Red color for "FOR YOUR TACTICS" */
+}
+
+#btn-erase {
+    position: absolute; /* Position the button relative to the title */
+    top: 0;
+    right: 0;
+    background-color: #f7b500;
+    color: #1a1a1d;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn-erase:hover {
+    transform: scale(1.05);
+}
+
+/* --- Styles for the Tactical Canvas --- */
+
+/* The board needs to be a positioning container */
+.board {
+    position: relative; 
+    /* ... rest of the .board styles are the same ... */
+}
+
+#tactical-canvas {
+    position: absolute; /* Place it on top of the grid cells */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Make it "see-through" to clicks by default */
+}
