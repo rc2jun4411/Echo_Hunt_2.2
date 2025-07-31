@@ -1,0 +1,45 @@
+Echo Hunt v2.1 - The Official Player's Manual
+Welcome, Commander!
+Welcome to the tactical battlefield of Echo Hunt! This is a game of deduction, bluffing, and strategic positioning. Two commanders enter, but only one will be victorious. This manual will guide you on your path to becoming a master of the hunt.
+The Goal
+Be the first to find and score a Direct Hit on your opponent's hidden ship.
+The Battlefield
+Each commander has their own view of the battlefield, which consists of two main boards:
+1. The Action Board (Left)
+(Your Primary Board / Your Ship)
+This is your command center.
+Your ship (a colored square) is located on this board.
+All of your actions—placing your ship, moving, and hitting—are performed by clicking on the cells of this board.
+2. The Tactical Board (Right)
+(Your Tracking Board / Your Guesses)
+This is your intelligence and planning map.
+This board shows the results of your hits against the enemy.
+Grey Tile: A confirmed Miss. The enemy was not in that square or the squares next to it.
+Yellow Tile: A confirmed ECHO. The enemy ship is in one of the squares adjacent to this yellow tile!
+Red Tile: A Direct Hit! You have won the game.
+The Tactical Pencil: You can click on this board at any time during your turn to draw circles, helping you remember and plan your next move.
+The ERASE Button: This powerful button clears both your drawings and all the colored Miss/Echo/Hit markers from your Tactical Board, giving you a fresh slate to re-evaluate your strategy.
+How to Play: Step-by-Step
+1. Getting Started (The Lobby)
+When you open the game page, you will automatically connect to the server.
+The first player will see: "Connected. Waiting for another player..."
+When the second player connects, the game will begin for both of you!
+2. The Setup Phase
+The message will say: "Player 1, place your ship."
+If you are Player 1, click any square on your Action Board (the left one) to place your ship.
+The screen will update, and the message will then instruct Player 2 to do the same.
+3. Your Turn: The Core Gameplay
+When it is your turn, two buttons will appear: "CHOOSE MOVE" and "CHOOSE HIT".
+Decide: First, you must decide on your action by clicking one of the buttons.
+Plan (Optional): After choosing your action, you can use your Tactical Pencil on the right board to mark potential targets or safe zones.
+Act: Click on the Action Board (the left one) to perform your chosen action.
+If you chose MOVE: Click on an adjacent square to move your ship there.
+If you chose HIT: Click on an adjacent square to fire a shot at the opponent.
+The Tactical Pause: After you perform a HIT or a MOVE, the result will appear on your screen. The game will then pause for 10 seconds. This is your time to analyze the result and use your Tactical Pencil to update your plan before the turn automatically switches to the other player.
+4. Winning the Game
+When you score a Direct Hit, the game will end, a victory message will appear, and you will see the "PLAY AGAIN" button, ready for a rematch!
+Tips for New Commanders
+An Echo is your most valuable piece of information. It narrows down the enemy's location to just a few squares.
+Don't forget to MOVE! If your opponent gets an Echo on you, moving your ship is the best way to escape and make their information obsolete.
+Use the ERASE button wisely. If the battlefield becomes too confusing or you think the opponent has moved far away, a clean map can lead to new insights.
+Remember the rules: You cannot move onto a square occupied by your opponent, and you can only hit squares adjacent to your own ship.
